@@ -9,7 +9,7 @@
 	"customizations": {
 		"vscode": {
 			"settings": {
-				"python.pythonPath": "$HOME//miniconda3/bin/python",
+				"python.pythonPath": "$HOME/miniconda3/bin/python",
 				"jupyter.jupyterServerType": "local"
 			},
 			"extensions": [
