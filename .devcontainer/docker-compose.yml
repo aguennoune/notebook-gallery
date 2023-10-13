@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  jupyter:
+    container_name: app-dev
+    build:
+      context: .
+      args:
+        - PYTHON_BASE_IMAGE=mcr.microsoft.com/vscode/devcontainers/python
+      target: ${TARGET_STAGE:-dev}
+    command: sleep infinity
+    volumes:
+      - .:/workspace:cached

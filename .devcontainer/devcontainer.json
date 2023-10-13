@@ -1,0 +1,28 @@
+{
+	"name": "poetry",
+	"dockerComposeFile": [
+		"../docker-compose.yml",
+		"docker-compose.yml"
+	],
+	"service": "jupyter",
+	"workspaceFolder": "/workspace",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"python.pythonPath": "/opt/conda/bin/python",
+				"jupyter.jupyterServerType": "local"
+			},
+			"extensions": [
+				"njpwerner.autodocstring",
+				"ms-python.black-formatter",
+				"quarto.quarto",
+				"esbenp.prettier-vscode",
+				"ms-python.flake8",
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"ms-azuretools.vscode-docker",
+				"vscodevim.vim"
+			]
+		}
+	}
+}

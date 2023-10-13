@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  jupyter:
+    container_name: jupyter-dev
+    build:
+      context: .
+      args:
+        - PYTHON_BASE_IMAGE=python:3.10-bullseye
+      target: ${TARGET_STAGE:-dev}
+    volumes:
+      - .:/workspace:cached
+    ports:
+    - 8888:8888
+    command: jupyter lab --port=8888 --ip=0.0.0.0 --allow-root --LabApp.token=''
