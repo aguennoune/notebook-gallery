@@ -33,6 +33,7 @@ pypdf = "^3.12.2"
 pyocr = "^0.8"
 dask = "^2023.7"
 setuptools = "59.8.0"
+kubernetes = "^28.1.0"
 
 [build-system]
 requires = ["poetry-core"]
