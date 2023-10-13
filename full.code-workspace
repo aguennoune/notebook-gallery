@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "./notebook"
+        },
+        {
+            "path": "./python/examples/notebooks"
+        }
+    ],
+}
